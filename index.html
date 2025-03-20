@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disculpa para la mejor novia del mundo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #e25c67;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .heart {
+            color: #e25c67;
+            font-size: 24px;
+            margin: 0 5px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e25c67;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #d1495b;
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+        .animation {
+            margin: 30px 0;
+        }
+        .hearts {
+            display: flex;
+            justify-content: center;
+        }
+        .animated-heart {
+            color: #e25c67;
+            font-size: 20px;
+            animation: float 3s ease-in-out infinite;
+            margin: 0 10px;
+        }
+        .animated-heart:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        .animated-heart:nth-child(3) {
+            animation-delay: 1s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+        .reasons {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .reason {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .reason-icon {
+            margin-right: 15px;
+            color: #e25c67;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiero pedirte perdón</h1>
+        
+        <div class="animation">
+            <div class="hearts">
+                <div class="animated-heart">❤️</div>
+                <div class="animated-heart">❤️</div>
+                <div class="animated-heart">❤️</div>
+            </div>
+        </div>
+
+        <p>Entiendo que te dé rabia que cambie mi actitud por ti. Una cagadita más, lo siento</p>
+        
+        <p>Por favor, acepta mis disculpas. Prometo esforzarme cada día para ser mejor para ti.</p>
+        
+        <div class="reasons">
+            <div class="reason">
+                <span class="reason-icon">✨</span>
+                <p>Eres lo mejor que me ha pasado en la vida.</p>
+            </div>
+            <div class="reason">
+                <span class="reason-icon">✨</span>
+                <p>Prometo escucharte mejor y ser el mejor novio posible.</p>
+            </div>
+            <div class="reason">
+                <span class="reason-icon">✨</span>
+                <p>Te amo.</p>
+            </div>
+        </div>
+        
+        <a href="#" class="btn" id="perdonButton">Acepto tus disculpas ❤️</a>
+        
+        <div class="footer">
+            <p>Con todo mi amor y arrepentimiento.</p>
+            <p>Siempre tuyo.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('perdonButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por perdonarme! Te prometo que no te arrepentirás. Te quiero mucho ❤️. PD: Esta noche quiero dormir contigo, así que te espero a las 8 en la puerta de tu facultad.');
+        });
+    </script>
+</body>
+</html>
